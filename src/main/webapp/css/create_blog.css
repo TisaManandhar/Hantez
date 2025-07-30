@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3e8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #fff0ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.2);
+    margin: 30px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-title {
+    color: #6a0dad;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #d1c4e9;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #9b59b6;
+    box-shadow: 0 0 5px rgba(155, 89, 182, 0.3);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-file {
+    width: 100%;
+    padding: 8px 0;
+    color: #495057;
+}
+
+/* Image preview */
+#imagePreview {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin-top: 10px;
+    display: none;
+    border: 2px dashed #b085cc;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fdf6ff;
+}
+
+/* Button */
+.btn-purple {
+    display: block;
+    width: 100%;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-purple:hover {
+    background-color: #8e44ad;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+    
+    .form-title {
+        font-size: 22px;
+    }
+    
+    .btn-purple {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .form-container {
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    .form-control {
+        padding: 8px 12px;
+    }
+}
